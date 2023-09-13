@@ -43,6 +43,7 @@ function App() {
 
   return (
     <main className="container mx-auto max-w-[730px] px-4 py-8 font-rubik desktop:py-16">
+      <div id="modal-root"></div>
       <div ref={commentListRef} className="flex flex-col gap-4 desktop:gap-5">
         {state
           .sort((a, b) => b.score - a.score)
